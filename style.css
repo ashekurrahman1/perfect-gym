@@ -1,0 +1,356 @@
+/*-----------------------------------------------------------------------------------
+Template Name: New HTML5 Template,
+Template URI: http://www.themectg.com
+Description: This is html5 template
+Author: Themectg
+Author URI: http://www.themectg.com
+Version: 1.0
+-----------------------------------------------------------------------------------
+CSS INDEX
+===================
+1. Google font
+2. Theme Default CSS
+3. Helper-class
+4. Button-style
+5. Mainmenu-area
+6. Section-Background
+7. Header-style
+8. Headline-style
+9. Skills-area
+10. Service-area
+11. Work-area
+12. Team-area
+13. Bar-effect-css
+14. Masp style
+15. Form-style
+16. Scroll-To-Top-Button
+17. Preloader-css
+-----------------------------------------------------------------------------------*/
+
+/*-----------------
+1. Google font
+------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900');
+
+/*-------------------
+2. Theme Default CSS
+--------------------*/
+
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: #ffffff;
+}
+
+input:focus,
+button:focus,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #eb315a;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #d7d7d7;
+    background-color: #232a35
+}
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/*-- Helper-class--*/
+
+.pink {
+    color: #eb315a
+}
+
+.section-padding {
+    padding: 120px 0;
+}
+
+.space-50 {
+    height: 50px;
+    display: block;
+    width: 100%;
+}
+
+.space-30 {
+    height: 30px;
+    display: block;
+    width: 100%;
+}
+
+/*-- Button-Style --*/
+
+.bttn {
+    padding: 1.2em 2.5em;
+    display: inline-block;
+    background-color: #eb315a;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 0 0 rgba(235, 49, 90, 1);
+}
+
+.bttn:hover {
+    background-color: #ffffff;
+    color: #eb315a;
+    box-shadow: 0 0 30px 0 rgba(235, 49, 90, 0.8);
+}
+
+.v-bttn {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #eb315a;
+    color: #ffffff;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 0 rgba(235, 49, 90, 0);
+}
+
+.v-bttn:hover {
+    background-color: #ffffff;
+    color: #eb315a;
+    box-shadow: 0 0 30px 0 rgba(235, 49, 90, 0.8);
+}
+
+/*-- Top-Bar --*/
+
+.top-bar {
+    padding: 15px 0;
+}
+
+.top-bar .modal-box {
+    float: left;
+    margin-right: 10px;
+}
+
+/*-- Modal-Box --*/
+
+.modal-box {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 4px;
+}
+
+.modal-box .box-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.modal-box p {
+    margin-bottom: 0;
+}
+
+
+/*-- Social-Menu --*/
+
+.social-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-menu li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-menu li a {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+
+/*-- MainMenu-Area --*/
+
+.mainmenu-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.mainmenu-area.navbar-inverse {
+    border: none;
+    border-radius: 0;
+}
+
+.mainmenu-area .navbar-brand {
+    display: block;
+    height: auto;
+}
+
+.mainmenu-area .navbar-brand img {
+    max-height: 50px;
+}
+
+.mainmenu-area ul.nav.navbar-nav > li > a {
+    padding: 30px 20px;
+    font-weight: 600;
+    background: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainmenu-area ul.nav.navbar-nav > li > a:before {
+    content: "";
+    position: absolute;
+    left: -60%;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: #eb315a;
+    border-radius: 3px;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.mainmenu-area ul.nav.navbar-nav > li.active > a:before,
+.mainmenu-area ul.nav.navbar-nav > li:hover > a:before {
+    left: 0;
+}
+
+.mainmenu-area ul.nav.navbar-nav > li > a:focus,
+.mainmenu-area ul.nav.navbar-nav > li > a:hover {
+    background: none;
+}
+
+/*-- Home-Area --*/
+
+.home-area {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+.vcenter {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 999;
+}
+
+.home-area .headline {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/*-- Slider-Section --*/
+
+.bg-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bg-slider .item {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.bg-slider .item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+
+.rslides_tabs {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99999;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rslides_tabs li {
+    display: block;
+}
+
+.rslides_tabs li a {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.rslides_tabs li.rslides_here a {
+    color: #eb315a;
+}
+
+
+.rslides_tabs li a:before {
+    content: "0";
+}
